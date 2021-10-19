@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Fly Far Ladies</string>
+    <string name="registration">Registration</string>
+    <string name="login">Login</string>
+</resources>
