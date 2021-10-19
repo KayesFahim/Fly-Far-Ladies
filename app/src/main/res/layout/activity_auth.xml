@@ -13,6 +13,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/registration"
+        android:onClick="AuthRegistration"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
         android:paddingTop="20dp"
@@ -22,11 +23,13 @@
         android:paddingRight="100dp"
         android:background="@drawable/button_border"
         android:layout_above="@+id/login"
-        android:text="@string/registration"/>
+        android:text="@string/registration"
+        tools:ignore="OnClick" />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/login"
+        android:onClick="AuthLogin"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:paddingTop="20dp"
