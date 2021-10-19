@@ -35,7 +35,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/welcome"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 android:layout_marginTop="6dp"
                 android:layout_marginBottom="20dp"
                 android:textColor="@color/ash"
@@ -63,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/editTextTextEmailAddress"
                 android:background="@drawable/bottomborder"
-                android:drawableRight="@drawable/passview"
+                android:drawableEnd="@drawable/passview"
                 android:ems="10"
                 android:hint="@string/password"
                 android:inputType="textWebPassword"
@@ -107,7 +107,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textSize="17sp"
-                    android:textColor="@color/ash"
+                    android:textColor="@color/black"
                     android:text="@string/don_t_have_an_account"/>
                 <TextView
                     android:layout_width="wrap_content"
