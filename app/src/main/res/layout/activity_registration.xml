@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:context=".LoginActivity">
+    tools:context=".RegistrationActivity">
 
     <ImageView
         android:id="@+id/logintopimage"
@@ -91,16 +91,16 @@
             tools:ignore="RtlSymmetry" />
 
 
-
         <Button
+            android:onClick="RegistrationBtn"
+            android:id="@+id/loginBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/button"
-            android:id="@+id/loginBtn"
-            android:text="@string/login"
-            android:textStyle="bold"
             android:layout_below="@+id/editTextPassword"
-            android:layout_marginTop="30dp" />
+            android:layout_marginTop="30dp"
+            android:background="@drawable/button"
+            android:text="@string/registration"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_below="@id/loginBtn"

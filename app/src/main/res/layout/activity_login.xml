@@ -87,14 +87,15 @@
                 android:text="@string/forgot_password"/>
 
             <Button
+                android:onClick="LoginBtn"
+                android:id="@+id/loginBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/button"
-                android:id="@+id/loginBtn"
-                android:text="@string/login"
-                android:textStyle="bold"
                 android:layout_below="@+id/forgotpassword"
-                android:layout_marginTop="30dp" />
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button"
+                android:text="@string/login"
+                android:textStyle="bold" />
 
             <LinearLayout
                 android:layout_below="@id/loginBtn"

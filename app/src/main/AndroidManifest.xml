@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FlyFarLadies">
         <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".RegistrationActivity"
             android:exported="false" />
         <activity

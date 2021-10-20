@@ -13,4 +13,17 @@
     <string name="full_name">Full Name</string>
     <string name="login_here">Login Here!</string>
     <string name="already_have_account">Already have account?</string>
+    <string name="my_profile">My Profile</string>
+    <string name="about">About</string>
+    <string name="name">Name</string>
+    <string name="edit">Edit</string>
+    <string name="security">Security</string>
+    <string name="change_password">Change Password</string>
+    <string name="all_your_handpicked">All your handpicked</string>
+    <string name="favourites">Favourites</string>
+    <string name="all_your_given_reviews">All your given reviews</string>
+    <string name="my_reviews">My Reviews</string>
+    <string name="all_offers_amp_deals"><![CDATA[All Offers & Deals]]></string>
+    <string name="my_offers">My Offers</string>
+    <string name="log_out">Log Out</string>
 </resources>
