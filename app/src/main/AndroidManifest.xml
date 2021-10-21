@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FlyFarLadies">
         <activity
+            android:name=".Dashboard.ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard.EditProfileActivity"
+            android:exported="false" />
+        <activity
             android:name=".Dashboard.SettingsActivity"
             android:exported="false" />
         <activity

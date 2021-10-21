@@ -30,9 +30,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/profile"
-            android:paddingBottom="-20dp"
             android:background="@drawable/bottomborder"
             android:orientation="horizontal"
+            android:paddingBottom="-20dp"
             android:weightSum="2">
 
             <ImageView
@@ -73,7 +73,7 @@
             </RelativeLayout>
 
             <TextView
-
+                android:onClick="EditProfile"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="120dp"
@@ -118,6 +118,7 @@
                     android:textSize="15sp" />
 
                 <TextView
+                    android:onClick="ChangePassword"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/forgottext"
@@ -331,6 +332,7 @@
             tools:ignore="RtlSymmetry" />
 
         <Button
+            android:onClick="Settings"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="30dp"

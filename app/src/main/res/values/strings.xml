@@ -36,4 +36,12 @@
     <string name="get_updated">Get updated</string>
     <string name="help">Help</string>
     <string name="need_help">Need help</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="change">Change</string>
+    <string name="save">Save</string>
+    <string name="cross">X</string>
+    <string name="address">Address</string>
+    <string name="update">Update</string>
+    <string name="enter_old_password">Enter Old Password</string>
+    <string name="set_new_passeword">Set New Passeword</string>
 </resources>
