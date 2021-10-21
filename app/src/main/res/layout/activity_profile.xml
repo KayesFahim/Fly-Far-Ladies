@@ -9,7 +9,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_margin="10dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
@@ -72,21 +72,26 @@
 
             </RelativeLayout>
 
-            <TextView
-                android:onClick="EditProfile"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="120dp"
-                android:layout_marginTop="5dp"
-                android:gravity="right"
-                android:text="@string/edit"
-                android:textColor="@color/primary"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:ignore="RtlHardcoded" />
-
-
         </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/profile"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="10dp"
+            android:gravity="right"
+            android:layout_marginEnd="10dp"
+            android:onClick="EditProfile"
+            android:text="@string/edit"
+            android:textColor="@color/primary"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:ignore="RtlHardcoded,UsingOnClickInXml" />
+
+
+
 
         <LinearLayout
             android:id="@+id/forgotpass"
@@ -145,8 +150,8 @@
             <ImageView
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_marginTop="10dp"
                 android:layout_gravity="center_vertical"
+                android:layout_marginTop="10dp"
                 android:src="@drawable/icon_favourite" />
 
             <RelativeLayout
@@ -166,6 +171,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/favouritetext"
                     android:layout_marginTop="5sp"
+                    android:onClick="FavouritesClick"
                     android:text="@string/favourites"
                     android:textColor="@color/black"
                     android:textSize="20sp"
@@ -299,29 +305,32 @@
     </RelativeLayout>
 
 
-
-
     <LinearLayout
-        android:background="@drawable/topborder"
-        android:layout_alignParentBottom="true"
         android:layout_width="match_parent"
-        android:layout_margin="10dp"
-        android:paddingTop="10dp"
-        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_height="wrap_content">
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/topborder"
+        android:gravity="center"
+        android:paddingTop="10dp">
+
         <Button
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:background="@drawable/icon_home" />
+
         <Button
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            android:background="@drawable/icon_paper"/>
+            android:background="@drawable/icon_paper" />
 
         <Button
             android:layout_width="40dp"
@@ -332,12 +341,12 @@
             tools:ignore="RtlSymmetry" />
 
         <Button
-            android:onClick="Settings"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            android:background="@drawable/icon_setting" />
+            android:background="@drawable/icon_setting"
+            android:onClick="Settings" />
 
 
     </LinearLayout>

@@ -55,4 +55,21 @@
     <string name="sea_view_premium_lifestyle">Sea view,Premium lifestyle</string>
     <string name="_85000_bdt">85000 BDT</string>
     <string name="_4_nights">4 Nights</string>
+    <string name="booking_details">Booking Details</string>
+    <string name="booking_id_3137556698">Booking ID: 3137556698</string>
+    <string name="give_review"><![CDATA[Give Review >]]></string>
+    <string name="royal_tulip_cox_s_bazar">Royal Tulip Cox\'s Bazar</string>
+    <string name="cox_s_bazar_chittagong">Cox\'s Bazar, Chittagong</string>
+    <string name="inclusions_accomodation">Inclusions: Accomodation</string>
+    <string name="check_in_10_00_am">Check in 10:00 AM</string>
+    <string name="check_out_10_00_am">Check Out 10:00 AM</string>
+    <string name="_25_oct_21">25 Oct 21</string>
+    <string name="_23_oct_21">23 OCT 21</string>
+    <string name="room_type">Room Type</string>
+    <string name="rooms">ROOMS</string>
+    <string name="ac_room">AC ROOM</string>
+    <string name="_1_room">1 Room</string>
+    <string name="amount_paid">Amount(Paid)</string>
+    <string name="call_hotel">Call Hotel</string>
+    <string name="_5000_bdt">5000 BDT</string>
 </resources>

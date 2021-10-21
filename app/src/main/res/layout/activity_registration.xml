@@ -92,13 +92,14 @@
 
 
         <Button
-            android:onClick="RegistrationBtn"
             android:id="@+id/loginBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/editTextPassword"
             android:layout_marginTop="30dp"
             android:background="@drawable/button"
+            android:textColor="@color/white"
+            android:onClick="RegistrationBtn"
             android:text="@string/registration"
             android:textStyle="bold" />
 

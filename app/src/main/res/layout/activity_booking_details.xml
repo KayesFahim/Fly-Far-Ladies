@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".Booking.BookingDetailsActivity">
+    <TextView
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/icon_back"/>
+
+    <TextView
+        android:id="@+id/bookingdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/booking_details"
+        android:textColor="@color/black"
+        android:textSize="29sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/bookingid"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/bookingdetails"
+        android:text="@string/booking_id_3137556698"
+        android:gravity="fill_vertical"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingStart="10dp"
+        android:background="@drawable/button"
+        tools:ignore="RtlSymmetry" />
+
+    <Button
+        android:id="@+id/givereview"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/bookingdetails"
+        android:layout_alignParentEnd="true"
+        android:text="@string/give_review"
+        android:gravity="fill_vertical"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingEnd="10dp"
+        android:background="@drawable/button"
+        tools:ignore="RtlSymmetry" />
+
+    <RelativeLayout
+        android:id="@+id/hoteldetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/givereview"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bottomborder"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/hotelname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/royal_tulip_cox_s_bazar"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hotelname"
+            android:layout_marginTop="10dp"
+            android:text="@string/cox_s_bazar_chittagong"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/included"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/location"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/inclusions_accomodation"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/hotelimage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/givereview"
+        android:layout_alignParentEnd="true"
+        app:cardCornerRadius="15dp"
+        android:layout_marginTop="15dp" >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/burjalrab" />
+    </androidx.cardview.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/timing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottomborder"
+        android:layout_below="@+id/hoteldetails">
+
+    <TextView
+        android:id="@+id/checkintime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="@string/check_in_10_00_am"/>
+
+        <TextView
+            android:id="@+id/checkouttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/check_out_10_00_am"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/checkinday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/checkintime"
+            android:layout_marginTop="10dp"
+            android:text="@string/_23_oct_21"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    <TextView
+        android:id="@+id/checkoutday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/checkouttime"
+        android:text="@string/_25_oct_21"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/roomdetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bottomborder"
+        android:layout_below="@+id/timing">
+
+        <TextView
+            android:id="@+id/roomstypetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/room_type"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/roomstext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/rooms"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/roomtype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/roomstypetext"
+            android:layout_marginTop="10dp"
+            android:text="@string/ac_room"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/rooms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/roomstext"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="17dp"
+            android:text="@string/_1_room"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bottomborder"
+        android:layout_below="@+id/roomdetails">
+
+        <TextView
+            android:id="@+id/guesttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/room_type"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="@string/amount_paid"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/guestname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/guesttext"
+            android:layout_marginTop="10dp"
+            android:text="@string/name"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/amountpaid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/amount"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="17dp"
+            android:text="@string/_5000_bdt"
+            android:textColor="@color/black"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/googlemap_webView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/info"
+        android:background="@drawable/button_border" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/call_hotel"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button"
+        android:layout_below="@+id/googlemap_webView"
+        android:textColor="@color/white"
+        android:textSize="20sp"/>
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/topborder"
+        android:gravity="center"
+        android:paddingTop="10dp">
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/icon_home" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/icon_paper" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/icon_account"
+            tools:ignore="RtlSymmetry" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/icon_setting"
+            android:onClick="Settings"
+            tools:ignore="OnClick" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

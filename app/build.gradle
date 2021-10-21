@@ -34,7 +34,8 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.1.1'
 
     //Extra Library
-    implementation 'com.mikhaellopez:circularimageview:4.3.0' //Round Image
+    implementation 'com.mikhaellopez:circularimageview:4.3.0'
+    implementation 'com.google.android.gms:play-services-maps:17.0.1'//Round Image
 
 
 

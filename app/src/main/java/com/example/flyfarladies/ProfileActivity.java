@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import com.example.flyfarladies.Dashboard.ChangePasswordActivity;
 import com.example.flyfarladies.Dashboard.EditProfileActivity;
+import com.example.flyfarladies.Dashboard.FavouritesActivity;
 import com.example.flyfarladies.Dashboard.SettingsActivity;
 
 public class ProfileActivity extends AppCompatActivity {
@@ -28,5 +29,9 @@ public class ProfileActivity extends AppCompatActivity {
 
     public void Settings(View view) {
         startActivity(new Intent(this, SettingsActivity.class));
+    }
+
+    public void FavouritesClick(View view) {
+        startActivity(new Intent(this, FavouritesActivity.class));
     }
 }
