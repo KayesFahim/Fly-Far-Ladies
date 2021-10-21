@@ -19,6 +19,7 @@
         <entry key="..\:/Users/Hp/Documents/Projects/GItHub-Projetcts/Fly Far Ladies/app/src/main/res/drawable/bottomborder.xml" value="0.2203125" />
         <entry key="..\:/Users/Hp/Documents/Projects/GItHub-Projetcts/Fly Far Ladies/app/src/main/res/drawable/button.xml" value="0.2203125" />
         <entry key="..\:/Users/Hp/Documents/Projects/GItHub-Projetcts/Fly Far Ladies/app/src/main/res/drawable/button_border.xml" value="0.2203125" />
+        <entry key="..\:/Users/Hp/Documents/Projects/GItHub-Projetcts/Fly Far Ladies/app/src/main/res/drawable/day_butoon.xml" value="0.2203125" />
         <entry key="..\:/Users/Hp/Documents/Projects/GItHub-Projetcts/Fly Far Ladies/app/src/main/res/drawable/editprofileborderbottom.xml" value="0.2203125" />
         <entry key="..\:/Users/Hp/Documents/Projects/GItHub-Projetcts/Fly Far Ladies/app/src/main/res/drawable/icon_notification.xml" value="0.2203125" />
         <entry key="..\:/Users/Hp/Documents/Projects/GItHub-Projetcts/Fly Far Ladies/app/src/main/res/drawable/login_btn.xml" value="0.2203125" />
@@ -29,12 +30,14 @@
         <entry key="..\:/Users/Hp/Documents/Projects/GItHub-Projetcts/Fly Far Ladies/app/src/main/res/layout/activity_auth.xml" value="0.18115942028985507" />
         <entry key="..\:/Users/Hp/Documents/Projects/GItHub-Projetcts/Fly Far Ladies/app/src/main/res/layout/activity_change_password.xml" value="0.11543715846994536" />
         <entry key="..\:/Users/Hp/Documents/Projects/GItHub-Projetcts/Fly Far Ladies/app/src/main/res/layout/activity_edit_profile.xml" value="0.15307971014492755" />
+        <entry key="..\:/Users/Hp/Documents/Projects/GItHub-Projetcts/Fly Far Ladies/app/src/main/res/layout/activity_favourites.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/Hp/Documents/Projects/GItHub-Projetcts/Fly Far Ladies/app/src/main/res/layout/activity_login.xml" value="0.25" />
         <entry key="..\:/Users/Hp/Documents/Projects/GItHub-Projetcts/Fly Far Ladies/app/src/main/res/layout/activity_profile.xml" value="0.25" />
         <entry key="..\:/Users/Hp/Documents/Projects/GItHub-Projetcts/Fly Far Ladies/app/src/main/res/layout/activity_registration.xml" value="0.25" />
         <entry key="..\:/Users/Hp/Documents/Projects/GItHub-Projetcts/Fly Far Ladies/app/src/main/res/layout/activity_settings.xml" value="0.19202898550724637" />
         <entry key="..\:/Users/Hp/Documents/Projects/GItHub-Projetcts/Fly Far Ladies/app/src/main/res/layout/activity_splash.xml" value="0.18115942028985507" />
         <entry key="..\:/Users/Hp/Documents/Projects/GItHub-Projetcts/Fly Far Ladies/app/src/main/res/layout/activity_thank_you.xml" value="0.18" />
+        <entry key="..\:/Users/Hp/Documents/Projects/GItHub-Projetcts/Fly Far Ladies/app/src/main/res/layout/favourites_view.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>
