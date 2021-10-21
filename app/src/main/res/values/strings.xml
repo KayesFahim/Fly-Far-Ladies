@@ -44,4 +44,11 @@
     <string name="update">Update</string>
     <string name="enter_old_password">Enter Old Password</string>
     <string name="set_new_passeword">Set New Passeword</string>
+    <string name="phone">Phone</string>
+    <string name="thank_you">Thank you !</string>
+    <string name="dear_user_your_booking_is_confirmed">Dear User, Your booking is confirmed</string>
+    <string name="just_sit_back">Just sit back</string>
+    <string name="no_need_to_call_us_for_reconfirm_ticket">No need to call us for reconfirm ticket</string>
+    <string name="your_ticket_attached_with_email_check_mailbox">Your ticket attached with email. Check mailbox!</string>
+    <string name="view_details">View Details</string>
 </resources>

@@ -6,6 +6,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.flyfarladies.Booking.ThankYouActivity;
+
 public class AuthActivity extends AppCompatActivity {
 
     @Override
@@ -20,6 +22,6 @@ public class AuthActivity extends AppCompatActivity {
     }
 
     public void AuthLogin(View view) {
-        startActivity(new Intent(this, LoginActivity.class));
+        startActivity(new Intent(this, ThankYouActivity.class));
     }
 }

@@ -8,39 +8,40 @@
     tools:context=".AuthActivity">
 
 
-
     <Button
+        android:id="@+id/registration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/registration"
-        android:onClick="AuthRegistration"
+        android:layout_above="@+id/login"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp"
-        android:paddingTop="20dp"
-        android:textSize="20sp"
-        android:paddingBottom="20dp"
-        android:paddingLeft="100dp"
-        android:paddingRight="100dp"
         android:background="@drawable/button_border"
-        android:layout_above="@+id/login"
+        android:onClick="AuthRegistration"
+        android:textColor="@color/white"
+        android:paddingLeft="100dp"
+        android:paddingTop="20dp"
+        android:paddingRight="100dp"
+        android:paddingBottom="20dp"
         android:text="@string/registration"
+        android:textSize="20sp"
         tools:ignore="OnClick" />
+
     <Button
+        android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/login"
-        android:onClick="AuthLogin"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:paddingTop="20dp"
-        android:textSize="20sp"
-        android:textColor="@color/black"
-        android:paddingBottom="20dp"
-        android:paddingLeft="140dp"
-        android:paddingRight="140dp"
-        android:background="@drawable/login_btn"
         android:layout_marginBottom="100dp"
-        android:text="@string/login"/>
+        android:background="@drawable/login_btn"
+        android:onClick="AuthLogin"
+        android:paddingLeft="140dp"
+        android:paddingTop="20dp"
+        android:paddingRight="140dp"
+        android:paddingBottom="20dp"
+        android:text="@string/login"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
 
 </RelativeLayout>

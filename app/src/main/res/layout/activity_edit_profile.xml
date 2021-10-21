@@ -87,7 +87,7 @@
             android:background="@drawable/editprofileborderbottom"
             android:ems="10"
             android:hint="@string/full_name"
-            android:inputType="text"
+            android:inputType="textPersonName"
             android:paddingStart="20dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
@@ -102,7 +102,6 @@
             android:layout_below="@+id/editTextTextName"
             android:layout_marginTop="30dp"
             android:background="@drawable/editprofileborderbottom"
-            android:ems="10"
             android:hint="@string/email"
             android:inputType="textEmailAddress"
             android:paddingStart="20dp"
@@ -118,14 +117,13 @@
             android:layout_below="@+id/editTextTextEmailAddress"
             android:layout_marginTop="30dp"
             android:background="@drawable/editprofileborderbottom"
-            android:ems="10"
             android:hint="@string/address"
             android:inputType="text"
             android:paddingStart="20dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
             android:textColorHint="@color/black"
-            tools:ignore="RtlSymmetry,TextFields" />
+            tools:ignore="RtlSymmetry" />
 
         <EditText
             android:id="@+id/editNumberMobile"
@@ -134,7 +132,7 @@
             android:layout_below="@+id/editTextAddress"
             android:layout_marginTop="30dp"
             android:background="@drawable/editprofileborderbottom"
-            android:hint="Phone"
+            android:hint="@string/phone"
             android:inputType="text"
             android:paddingStart="20dp"
             android:paddingTop="10dp"
