@@ -72,4 +72,6 @@
     <string name="amount_paid">Amount(Paid)</string>
     <string name="call_hotel">Call Hotel</string>
     <string name="_5000_bdt">5000 BDT</string>
+    <string name="propular_packages">Propular Packages</string>
+    <string name="view_all">View all</string>
 </resources>

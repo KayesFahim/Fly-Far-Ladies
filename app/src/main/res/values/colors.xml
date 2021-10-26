@@ -9,6 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="ash">#939192</color>
     <color name="primary">#6d098f</color>
+    <color name="trans">#99000000</color>
 </resources>
 
 

@@ -18,6 +18,6 @@ public class RegistrationActivity extends AppCompatActivity {
     }
 
     public void RegistrationBtn(View view) {
-        startActivity(new Intent(this, ProfileActivity.class));
+        startActivity(new Intent(this, MainActivity.class));
     }
 }
