@@ -74,4 +74,9 @@
     <string name="_5000_bdt">5000 BDT</string>
     <string name="propular_packages">Propular Packages</string>
     <string name="view_all">View all</string>
+
+    <string name="signin">Sign In</string>
+    <string name="cancel">Cancel</string>
+    <string name="minimum_password">Password Must be More than 6</string>
+    <string name="auth_failed">Login Failed</string>
 </resources>

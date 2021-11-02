@@ -23,6 +23,6 @@ public class AuthActivity extends AppCompatActivity {
     }
 
     public void AuthLogin(View view) {
-        startActivity(new Intent(this, BookingDetailsActivity.class));
+        startActivity(new Intent(this, LoginActivity.class));
     }
 }

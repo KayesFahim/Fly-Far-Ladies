@@ -93,9 +93,8 @@
                 android:layout_below="@+id/forgotpassword"
                 android:layout_marginTop="30dp"
                 android:background="@drawable/button"
-                android:onClick="LoginBtn"
-                android:textColor="@color/white"
                 android:text="@string/login"
+                android:textColor="@color/white"
                 android:textStyle="bold" />
 
             <LinearLayout
