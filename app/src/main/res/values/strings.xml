@@ -79,4 +79,8 @@
     <string name="cancel">Cancel</string>
     <string name="minimum_password">Password Must be More than 6</string>
     <string name="auth_failed">Login Failed</string>
+    <string name="discover">Discover</string>
+    <string name="popular">Popular</string>
+    <string name="domestic">Domestic</string>
+    <string name="explore">Explore</string>
 </resources>

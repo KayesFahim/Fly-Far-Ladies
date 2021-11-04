@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    tools:context=".Packages.PackagesMainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/propular"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/popular"
+            android:textStyle="bold"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textColor="@color/white"
+            android:background="@drawable/button"/>
+        <TextView
+            android:id="@+id/discover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/discover"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/ash" />
+        <TextView
+            android:id="@+id/domestic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/domestic"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:layout_marginStart="10dp"
+            android:textColor="@color/ash" />
+
+        <TextView
+            android:id="@+id/explore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/explore"
+            android:textSize="20sp"
+            android:layout_marginStart="10dp"
+            android:textStyle="bold"
+            android:textColor="@color/ash" />
+
+
+    </LinearLayout>
+
+
+
+
+</RelativeLayout>
