@@ -1,6 +1,7 @@
 plugins {
     id 'com.android.application'
     id 'com.google.gms.google-services'
+    id 'com.google.firebase.firebase-perf'
 }
 
 android {
@@ -36,11 +37,13 @@ dependencies {
 
     //Extra Library
     implementation 'com.mikhaellopez:circularimageview:4.3.0'
-    implementation 'com.google.android.gms:play-services-maps:17.0.1'
-    implementation 'com.google.firebase:firebase-analytics:17.2.2'
-    implementation 'com.google.firebase:firebase-auth:19.2.0'
-    implementation 'com.google.firebase:firebase-database:19.2.1'
-    implementation 'com.google.firebase:firebase-storage:19.1.1'//Round Image
+    implementation 'com.google.android.gms:play-services-maps:18.0.0'
+    implementation 'com.google.firebase:firebase-analytics:20.0.0'
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'com.google.firebase:firebase-database:20.0.2'
+    implementation 'com.google.firebase:firebase-storage:20.0.0'
+    implementation 'com.google.firebase:firebase-perf:20.0.3'
+    implementation 'com.google.firebase:firebase-messaging:23.0.0'//Round Image
 
 
 

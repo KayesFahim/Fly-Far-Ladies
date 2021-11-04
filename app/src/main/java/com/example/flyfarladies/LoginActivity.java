@@ -28,7 +28,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         if (user != null) {
-            startActivity(new Intent(this, ProfileActivity.class));
+            startActivity(new Intent(this, MainActivity.class));
         } else {
             editEmail = findViewById(R.id.editTextTextEmailAddress);
             editPass = findViewById(R.id.editTextTextPassword);
@@ -77,4 +77,11 @@ public class LoginActivity extends AppCompatActivity {
     }
 
 
+    public void gotoReg(View view) {
+        startActivity(new Intent(this, RegistrationActivity.class));
+    }
+
+    public void gotoForgotPass(View view) {
+        startActivity(new Intent(this, ForgotPasswordActivity.class));
+    }
 }

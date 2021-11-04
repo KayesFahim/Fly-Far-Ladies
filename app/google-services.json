@@ -1,41 +1,34 @@
 {
   "project_info": {
-    "project_number": "569118511850",
-    "project_id": "fly-far-ladies",
-    "storage_bucket": "fly-far-ladies.appspot.com"
+    "project_number": "120197618502",
+    "firebase_url": "https://fly-farladies-default-rtdb.firebaseio.com",
+    "project_id": "fly-farladies",
+    "storage_bucket": "fly-farladies.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:569118511850:android:bffdd0cd00433a27b3bd93",
+        "mobilesdk_app_id": "1:120197618502:android:ec0515a8e2fab011aae347",
         "android_client_info": {
           "package_name": "com.example.flyfarladies"
         }
       },
       "oauth_client": [
         {
-          "client_id": "569118511850-07p2shfg55jgvvooifk4p1ol5o2dpvf0.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.example.flyfarladies",
-            "certificate_hash": "b916c37d67aa4f7b4180c531d0f54375893aa894"
-          }
-        },
-        {
-          "client_id": "569118511850-uf7rfq2cfe9siq50mlqfj7lhoj6mtjjk.apps.googleusercontent.com",
+          "client_id": "120197618502-192feb81r4g130mqh54sgvotqfan1vp0.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC4VUrcFz1zjpY7UQUbhkh8vFXwSWDo8xM"
+          "current_key": "AIzaSyBQAfDSpfdGtBYSVVMVO1PWGqNmYgZ6RCg"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "569118511850-uf7rfq2cfe9siq50mlqfj7lhoj6mtjjk.apps.googleusercontent.com",
+              "client_id": "120197618502-192feb81r4g130mqh54sgvotqfan1vp0.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -75,16 +75,17 @@
                 tools:ignore="RtlSymmetry" />
 
             <TextView
+                android:onClick="gotoForgotPass"
+                android:id="@+id/forgotpassword"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/forgotpassword"
+                android:layout_below="@id/editTextTextPassword"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="20dp"
-                android:textSize="20sp"
-                android:textStyle="bold"
+                android:text="@string/forgot_password"
                 android:textColor="@color/primary"
-                android:layout_below="@id/editTextTextPassword"
-                android:text="@string/forgot_password"/>
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <Button
                 android:id="@+id/loginBtn"
@@ -111,6 +112,7 @@
                     android:textColor="@color/black"
                     android:text="@string/don_t_have_an_account"/>
                 <TextView
+                    android:onClick="gotoReg"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:textColor="@color/primary"

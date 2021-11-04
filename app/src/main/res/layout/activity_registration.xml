@@ -42,14 +42,14 @@
             android:text="@string/we_are_here_for_your_dream" />
 
         <EditText
-            android:id="@+id/editTextTextName"
+            android:id="@+id/editTextName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/welcometag"
             android:background="@drawable/bottomborder"
             android:ems="10"
             android:hint="@string/full_name"
-            android:inputType="textEmailAddress"
+            android:inputType="text"
             android:paddingStart="20dp"
             android:paddingTop="10dp"
             android:paddingBottom="10dp"
@@ -58,10 +58,10 @@
 
 
         <EditText
-            android:id="@+id/editTextTextEmailAddress"
+            android:id="@+id/editTextEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/editTextTextName"
+            android:layout_below="@+id/editTextName"
             android:background="@drawable/bottomborder"
             android:ems="10"
             android:hint="@string/email"
@@ -77,7 +77,7 @@
             android:id="@+id/editTextPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/editTextTextEmailAddress"
+            android:layout_below="@+id/editTextEmailAddress"
             android:background="@drawable/bottomborder"
             android:drawableEnd="@drawable/passview"
             android:ems="10"
@@ -92,19 +92,19 @@
 
 
         <Button
-            android:id="@+id/loginBtn"
+            android:id="@+id/RegBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/editTextPassword"
             android:layout_marginTop="30dp"
             android:background="@drawable/button"
-            android:textColor="@color/white"
             android:onClick="RegistrationBtn"
             android:text="@string/registration"
+            android:textColor="@color/white"
             android:textStyle="bold" />
 
         <LinearLayout
-            android:layout_below="@id/loginBtn"
+            android:layout_below="@id/RegBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
@@ -117,6 +117,7 @@
                 android:textColor="@color/black"
                 android:text="@string/already_have_account"/>
             <TextView
+                android:onClick="gotoLogin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textColor="@color/primary"
