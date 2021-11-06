@@ -8,17 +8,15 @@
     tools:context=".Packages.PackagesMainActivity">
 
     <LinearLayout
+        android:id="@+id/category"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
         <Button
             android:id="@+id/propular"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
             android:text="@string/popular"
-            android:textStyle="bold"
-            android:paddingLeft="20dp"
-            android:paddingRight="20dp"
             android:textColor="@color/white"
             android:background="@drawable/button"/>
         <TextView
@@ -27,7 +25,6 @@
             android:layout_height="wrap_content"
             android:text="@string/discover"
             android:textStyle="bold"
-            android:textSize="20sp"
             android:layout_marginStart="10dp"
             android:textColor="@color/ash" />
         <TextView
@@ -36,7 +33,6 @@
             android:layout_height="wrap_content"
             android:text="@string/domestic"
             android:textStyle="bold"
-            android:textSize="20sp"
             android:layout_marginStart="10dp"
             android:textColor="@color/ash" />
 
@@ -45,13 +41,55 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/explore"
-            android:textSize="20sp"
             android:layout_marginStart="10dp"
             android:textStyle="bold"
             android:textColor="@color/ash" />
 
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/category"
+        android:id="@+id/banner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="250dp"
+            android:background="@drawable/packages">
+        </ImageView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_below="@id/banner"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_height="fill_parent">
+
+        <TextView
+            android:id="@+id/pacakgestitele"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/packages"
+            android:textColor="@color/primary"
+            android:textStyle="bold"
+            android:textSize="20dp" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="10dp"
+            android:id="@+id/packagesrecy"
+            android:layout_below="@+id/pacakgestitele"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+
 
 
 

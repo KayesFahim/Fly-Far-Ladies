@@ -15,6 +15,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
         <activity
+            android:name=".Packages.PackageDetailsActivity"
+            android:exported="false" />
+        <activity
             android:name=".Packages.PackagesMainActivity"
             android:exported="false" />
         <activity

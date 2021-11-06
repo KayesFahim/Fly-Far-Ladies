@@ -80,7 +80,8 @@
     <string name="minimum_password">Password Must be More than 6</string>
     <string name="auth_failed">Login Failed</string>
     <string name="discover">Discover</string>
-    <string name="popular">Popular</string>
     <string name="domestic">Domestic</string>
     <string name="explore">Explore</string>
+    <string name="packages">Packages</string>
+    <string name="popular">Popular</string>
 </resources>

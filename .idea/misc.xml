@@ -47,11 +47,19 @@
         <entry key="..\:/Users/Hp/Documents/Projects/GItHub-Projetcts/Fly Far Ladies/app/src/main/res/layout/activity_splash.xml" value="0.18115942028985507" />
         <entry key="..\:/Users/Hp/Documents/Projects/GItHub-Projetcts/Fly Far Ladies/app/src/main/res/layout/activity_thank_you.xml" value="0.18" />
         <entry key="..\:/Users/Hp/Documents/Projects/GItHub-Projetcts/Fly Far Ladies/app/src/main/res/layout/favourites_view.xml" value="0.25" />
-        <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/activity_auth.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout-v22/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/activity_auth.xml" value="0.33" />
+        <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/activity_edit_profile.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/activity_favourites.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/activity_forgot_password.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/activity_login.xml" value="0.25815217391304346" />
+        <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/activity_login.xml" value="0.33" />
+        <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/activity_package_details.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/activity_packages_main.xml" value="0.33" />
+        <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/activity_profile.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/activity_registration.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/activity_thank_you.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/packages_view.xml" value="0.33" />
       </map>
     </option>
   </component>
