@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,227 +8,369 @@
     tools:context=".MainActivity">
 
     <RelativeLayout
-        android:id="@+id/searchbar"
         android:layout_width="match_parent"
-        android:layout_height="280dp"
-        android:background="@drawable/explore">
-
-        <androidx.cardview.widget.CardView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/searchbox"
-            app:cardCornerRadius="30dp">
-
-            <SearchView
-                android:layout_width="300dp"
-                android:layout_height="60dp"
-                android:background="@drawable/searchbox"
-                android:iconifiedByDefault="false"
-                android:searchIcon="@null"
-                android:paddingLeft="30dp"
-                android:paddingTop="10dp"
-                android:queryHint="What are looking for?" />
+        android:layout_height="wrap_content">
 
 
-        </androidx.cardview.widget.CardView>
+        <RelativeLayout
+            android:id="@+id/searchbar"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="@drawable/explore">
 
-
-    </RelativeLayout>
-
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/searchbar"
-        android:layout_marginStart="5dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="5dp">
-
-        <TextView
-            android:id="@+id/propulartext"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/propular_packages"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginEnd="5dp"
-            android:onClick="packagesviewAll"
-            android:text="@string/view_all"
-            android:textColor="@color/primary"
-            android:textSize="15sp"
-            android:textStyle="bold" />
-
-        <HorizontalScrollView
-            android:id="@+id/popularpackagesscrollview"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/propulartext"
-            android:scrollbars="none">
-
-
-            <LinearLayout
-
+            <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal"
-                android:visibility="visible">
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="120dp"
-                    android:layout_height="150dp"
-                    android:layout_margin="10dp"
-                    app:cardCornerRadius="20dp">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/inbound" />
-
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="120dp"
-                    android:layout_height="150dp"
-                    android:layout_margin="10dp"
-                    app:cardCornerRadius="20dp">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/international" />
-
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="120dp"
-                    android:layout_height="150dp"
-                    android:layout_margin="10dp"
-                    app:cardCornerRadius="20dp">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/inboundnight" />
-
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="120dp"
-                    android:layout_height="150dp"
-                    android:layout_margin="10dp"
-                    app:cardCornerRadius="20dp">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/inboundnight" />
-
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="120dp"
-                    android:layout_height="150dp"
-                    android:layout_margin="10dp"
-                    app:cardCornerRadius="20dp">
-
-                    <ImageView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:src="@drawable/international" />
-
-
-                </androidx.cardview.widget.CardView>
-
-
-            </LinearLayout>
-        </HorizontalScrollView>
-
-
-
-        <TextView
-            android:id="@+id/populartitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/popular"
-            android:textColor="@color/black"
-            android:layout_below="@+id/popularpackagesscrollview"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-        <RelativeLayout
-            android:layout_below="@+id/populartitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="10dp">
-
-            <LinearLayout
-                android:id="@+id/row1"
+                android:layout_alignParentBottom="true"
                 android:layout_centerHorizontal="true"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/searchbox"
+                app:cardCornerRadius="30dp">
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/flight"/>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/visa"/>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/hotel"/>
+                <SearchView
+                    android:layout_width="300dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/searchbox"
+                    android:iconifiedByDefault="false"
+                    android:paddingStart="30dp"
+                    android:paddingTop="10dp"
+                    android:queryHint="What are looking for?"
+                    android:searchIcon="@null" />
 
 
-            </LinearLayout>
-            <LinearLayout
-                android:id="@+id/row2"
-                android:layout_marginTop="10dp"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@+id/row1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
+            </androidx.cardview.widget.CardView>
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/resort"/>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/villa"/>
-
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/rentcar"/>
-
-
-            </LinearLayout>
 
         </RelativeLayout>
 
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/searchbar"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp">
+
+            <TextView
+                android:id="@+id/propulartext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/propular_packages"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:onClick="packagesviewAll"
+                android:text="@string/view_all"
+                android:textColor="@color/primary"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:id="@+id/popularpackagesscrollview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/propulartext"
+                android:scrollbars="none">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="120dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="20dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/inbound" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="120dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="20dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/international" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="120dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="20dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/inboundnight" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="120dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="20dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/inboundnight" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="120dp"
+                        android:layout_height="150dp"
+                        android:layout_margin="10dp"
+                        app:cardCornerRadius="20dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:src="@drawable/international" />
+
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+            <TextView
+                android:id="@+id/populartitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/popularpackagesscrollview"
+                android:layout_margin="10dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/popular"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/services"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/populartitle"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+                <LinearLayout
+                    android:id="@+id/row1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/flight" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/visa" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/hotel" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/row2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/row1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/resort" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/villa"
+                        android:paddingTop="10dp" />
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="5dp"
+                        android:background="@drawable/rentcar"
+                        android:paddingTop="10dp" />
+
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/services"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:id="@+id/discovertext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="Best Experience"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:onClick="packagesviewAll"
+                    android:text="@string/view_all"
+                    android:textColor="@color/primary"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="500dp"
+                    android:layout_marginTop="5dp"
+                    app:cardCornerRadius="20dp"
+                    android:layout_below="@+id/discovertext">
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+
+
+                <RelativeLayout
+                    android:id="@+id/videoView_thumbnail"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/thumbnail"
+                    android:layout_height="300dp"
+                    android:scaleType="centerCrop">
+
+                    <Button
+                        android:id="@+id/videoplayBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/icon_playbutton"
+                        android:layout_centerInParent="true"/>
+
+
+
+                </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/videotitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/videoView_thumbnail"
+                            android:layout_marginStart="30dp"
+                            android:text="@string/mountain_in_india"
+                            android:textColor="@color/black"
+                            android:layout_marginTop="20dp"
+                            android:textSize="30sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/videodes"
+                            android:layout_below="@+id/videotitle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="30dp"
+                            android:text="@string/a_quick_journey"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/videodes"
+                            android:layout_marginTop="20dp"
+                            android:background="@drawable/button"
+                            android:padding="5dp"
+                            android:text="@string/view_trip_details"
+                            android:textColor="@color/white"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
     </RelativeLayout>
 
 
-
-
-</RelativeLayout>
+</ScrollView>

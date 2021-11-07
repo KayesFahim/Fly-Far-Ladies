@@ -84,4 +84,7 @@
     <string name="explore">Explore</string>
     <string name="packages">Packages</string>
     <string name="popular">Popular</string>
+    <string name="mountain_in_india">Mountain in India</string>
+    <string name="a_quick_journey">A quick journey</string>
+    <string name="view_trip_details">View Trip Details</string>
 </resources>
