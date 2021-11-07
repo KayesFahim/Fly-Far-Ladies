@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,9 +7,17 @@
     android:background="@color/white"
     tools:context=".MainActivity">
 
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp">
+
+
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:background="@color/white">
 
 
         <RelativeLayout
@@ -45,6 +53,7 @@
 
 
         <RelativeLayout
+            android:id="@+id/propularsection"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/searchbar"
@@ -295,9 +304,11 @@
                     android:textStyle="bold" />
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/videocard"
                     android:layout_width="match_parent"
-                    android:layout_height="500dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
                     app:cardCornerRadius="20dp"
                     android:layout_below="@+id/discovertext">
                     <RelativeLayout
@@ -305,26 +316,30 @@
                         android:layout_height="match_parent">
 
 
+                        <RelativeLayout
+                            android:id="@+id/videoView_thumbnail"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:scaleType="centerCrop">
+
+                            <ImageView
+                                android:id="@+id/videoview"
+                                android:src="@drawable/thumbnail"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
 
 
-
-                <RelativeLayout
-                    android:id="@+id/videoView_thumbnail"
-                    android:layout_width="match_parent"
-                    android:background="@drawable/thumbnail"
-                    android:layout_height="300dp"
-                    android:scaleType="centerCrop">
-
-                    <Button
-                        android:id="@+id/videoplayBtn"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/icon_playbutton"
-                        android:layout_centerInParent="true"/>
+                            <Button
+                                android:id="@+id/videoplayBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/icon_playbutton"
+                                android:onClick="VideoPlayBtn"
+                                tools:ignore="OnClick,UsingOnClickInXml" />
 
 
-
-                </RelativeLayout>
+                        </RelativeLayout>
 
                         <TextView
                             android:id="@+id/videotitle"
@@ -332,45 +347,220 @@
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/videoView_thumbnail"
                             android:layout_marginStart="30dp"
+                            android:layout_marginTop="20dp"
                             android:text="@string/mountain_in_india"
                             android:textColor="@color/black"
-                            android:layout_marginTop="20dp"
-                            android:textSize="30sp"
+                            android:textSize="23sp"
                             android:textStyle="bold" />
 
                         <TextView
                             android:id="@+id/videodes"
-                            android:layout_below="@+id/videotitle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_below="@+id/videotitle"
                             android:layout_marginStart="30dp"
-                            android:text="@string/a_quick_journey"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
+                            android:text="@string/a_quick_journey" />
 
                         <Button
+                            android:onClick="gotoDeatails"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/videodes"
+                            android:layout_marginStart="10dp"
                             android:layout_marginTop="20dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="10dp"
                             android:background="@drawable/button"
                             android:padding="5dp"
                             android:text="@string/view_trip_details"
                             android:textColor="@color/white"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
+                            android:textSize="15sp"
+                            android:textStyle="bold"
+                            tools:ignore="OnClick" />
 
 
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/videocard">
+
+                    <TextView
+                        android:id="@+id/Budgettext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="@string/budget_packages"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="10dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:onClick="packagesviewAll"
+                        android:text="@string/view_all"
+                        android:textColor="@color/primary"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <HorizontalScrollView
+                        android:id="@+id/bpscrool"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/Budgettext"
+                        android:scrollbars="none">
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:visibility="visible">
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="200dp"
+                                android:layout_height="150dp"
+                                android:background="@drawable/india"
+                                app:cardCornerRadius="10dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/india" />
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="200dp"
+                                android:layout_height="150dp"
+                                app:cardCornerRadius="10dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/dubai" />
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="200dp"
+                                android:layout_height="150dp"
+                                app:cardCornerRadius="10dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/turkey" />
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="200dp"
+                                android:layout_height="150dp"
+                                app:cardCornerRadius="20dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/africa" />
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:layout_width="200dp"
+                                android:layout_height="150dp"
+                                app:cardCornerRadius="10dp">
+
+                                <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:src="@drawable/brazil" />
+
+
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+
+                </RelativeLayout>
 
 
             </RelativeLayout>
+
+
 
 
         </RelativeLayout>
 
     </RelativeLayout>
 
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/topborder"
+        android:gravity="center"
+        android:paddingTop="10dp">
 
-</ScrollView>
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/icon_home" />
+
+        <Button
+            android:onClick="gotoBooking"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/icon_paper"
+            tools:ignore="OnClick" />
+
+        <Button
+            android:onClick="gotoProfile"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/icon_account"
+            tools:ignore="OnClick,RtlSymmetry" />
+
+        <Button
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:background="@drawable/icon_setting"
+            android:onClick="Settings"
+            tools:ignore="OnClick,UsingOnClickInXml" />
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>
