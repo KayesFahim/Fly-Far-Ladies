@@ -88,4 +88,10 @@
     <string name="a_quick_journey">A quick journey</string>
     <string name="view_trip_details">View Trip Details</string>
     <string name="budget_packages">Budget Packages</string>
+    <string name="flight">FLIGHT</string>
+    <string name="private_villa">PRIVATE VILLA</string>
+    <string name="hotels">Hotels</string>
+    <string name="resorts">RESORT</string>
+    <string name="visa">VISA</string>
+    <string name="rent_a_car">RENT A CAR</string>
 </resources>

@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     android:layout_margin="10dp"
     tools:context=".Booking.BookingDetailsActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
     <TextView
         android:id="@+id/back"
         android:layout_width="wrap_content"
@@ -259,7 +270,8 @@
         android:layout_width="match_parent"
         android:layout_height="150dp"
         android:layout_below="@+id/info"
-        android:background="@drawable/button_border" />
+        android:background="@drawable/button_border"
+        tools:ignore="WebViewLayout" />
 
     <Button
         android:layout_width="match_parent"
@@ -273,10 +285,8 @@
         android:textColor="@color/white"
         android:textSize="20sp"/>
 
-
-
-
-
+    </RelativeLayout>
+    </ScrollView>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -286,7 +296,7 @@
         android:layout_marginStart="10dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="10dp"
+
         android:background="@drawable/topborder"
         android:gravity="center"
         android:paddingTop="10dp">

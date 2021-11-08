@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
     tools:context=".MainActivity">
 
     <ScrollView
@@ -43,7 +42,8 @@
                     android:paddingStart="30dp"
                     android:paddingTop="10dp"
                     android:queryHint="What are looking for?"
-                    android:searchIcon="@null" />
+                    android:searchIcon="@null"
+                    tools:ignore="RtlSymmetry" />
 
 
             </androidx.cardview.widget.CardView>
@@ -206,31 +206,167 @@
                     android:id="@+id/row1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true">
+                    android:layout_centerHorizontal="true"
+                    android:paddingBottom="5dp">
 
-                    <Button
+
+                    <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:background="@drawable/flight" />
+                        android:paddingEnd="10dp"
+                        android:paddingStart="10dp"
+                        tools:ignore="RtlSymmetry">
 
-                    <Button
+                        <ImageView
+                            android:id="@+id/flightimage"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/flight" />
+
+                        <TextView
+                            android:id="@+id/flighttext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/flightimage"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="20dp"
+
+                            android:text="@string/flight"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlSymmetry" />
+
+
+                        <ImageView
+                            android:id="@+id/resorttext"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_below="@+id/flighttext"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/resort" />
+
+                        <TextView
+                            android:id="@+id/resortimage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/resorttext"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/resorts"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlSymmetry" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="5dp"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:background="@drawable/visa" />
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:layout_marginEnd="10dp">
 
-                    <Button
+                        <ImageView
+                            android:id="@+id/villatext"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/villa" />
+
+                        <TextView
+                            android:id="@+id/villaimage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/villatext"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/private_villa"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlSymmetry" />
+
+                        <ImageView
+                            android:id="@+id/rentcarimage"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_below="@+id/villaimage"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/car" />
+
+                        <TextView
+                            android:id="@+id/rentcartext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/rentcarimage"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/rent_a_car"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlSymmetry" />
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:background="@drawable/hotel" />
+                        android:paddingStart="10dp"
+                        android:paddingEnd="10dp"
+                        android:layout_marginEnd="10dp">
 
+                        <ImageView
+                            android:id="@+id/hotelstext"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/hotel" />
+
+                        <TextView
+                            android:id="@+id/hotelimage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/hotelstext"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/hotels"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlSymmetry" />
+
+                        <ImageView
+                            android:id="@+id/visaimage"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_below="@+id/hotelimage"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/visa" />
+
+                        <TextView
+                            android:id="@+id/visatext"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/visaimage"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center_horizontal"
+                            android:text="@string/visa"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlSymmetry" />
+
+
+                    </RelativeLayout>
 
                 </LinearLayout>
 
@@ -240,30 +376,23 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@+id/row1"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="10dp">
+                    android:paddingBottom="5dp">
 
-                    <Button
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="5dp"
-                        android:layout_marginEnd="10dp"
-                        android:background="@drawable/resort" />
 
-                    <Button
+                    <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginEnd="10dp"
-                        android:background="@drawable/villa"
-                        android:paddingTop="10dp" />
+                        android:layout_height="wrap_content">
 
-                    <Button
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="10dp"
-                        android:layout_marginEnd="5dp"
-                        android:background="@drawable/rentcar"
-                        android:paddingTop="10dp" />
+                        android:layout_height="wrap_content">
+
+
+                    </RelativeLayout>
 
 
                 </LinearLayout>
@@ -307,10 +436,11 @@
                     android:id="@+id/videocard"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:layout_below="@+id/discovertext"
                     android:layout_marginTop="5dp"
                     android:layout_marginBottom="5dp"
-                    app:cardCornerRadius="20dp"
-                    android:layout_below="@+id/discovertext">
+                    app:cardCornerRadius="20dp">
+
                     <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent">
@@ -324,9 +454,9 @@
 
                             <ImageView
                                 android:id="@+id/videoview"
-                                android:src="@drawable/thumbnail"
                                 android:layout_width="wrap_content"
-                                android:layout_height="wrap_content" />
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/thumbnail" />
 
 
                             <Button
@@ -362,7 +492,6 @@
                             android:text="@string/a_quick_journey" />
 
                         <Button
-                            android:onClick="gotoDeatails"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_below="@+id/videodes"
@@ -371,6 +500,7 @@
                             android:layout_marginEnd="10dp"
                             android:layout_marginBottom="10dp"
                             android:background="@drawable/button"
+                            android:onClick="gotoDeatails"
                             android:padding="5dp"
                             android:text="@string/view_trip_details"
                             android:textColor="@color/white"
@@ -381,6 +511,7 @@
 
                     </RelativeLayout>
                 </androidx.cardview.widget.CardView>
+
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -503,8 +634,6 @@
 
 
             </RelativeLayout>
-
-
 
 
         </RelativeLayout>
