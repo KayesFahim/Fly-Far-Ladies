@@ -4,15 +4,12 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
-import android.app.ProgressDialog;
-import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -20,6 +17,7 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.example.flyfarladies.Booking.BookingPageActivity;
 import com.example.flyfarladies.Dashboard.SettingsActivity;
+import com.example.flyfarladies.Packages.CountryPackagesActivity;
 import com.example.flyfarladies.Packages.PackagesMainActivity;
 import com.example.flyfarladies.Videos.VideoActivity;
 import com.example.flyfarladies.Videos.VideoModel;
@@ -52,7 +50,6 @@ public class MainActivity extends AppCompatActivity {
 
         FirebaseUser muser = FirebaseAuth.getInstance().getCurrentUser();
 
-        assert muser != null;
         DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference().child("Video").child("1");
 
 
@@ -65,7 +62,6 @@ public class MainActivity extends AppCompatActivity {
                 assert videoModel != null;
 
                 String bool = videoModel.getVideoStatus();
-
                 if(bool.equals("true")) {
 
                     VideoId = videoModel.getVideoId();
@@ -78,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
                             .into(imageView);
                 }else{
                     videotitle.setText("No Video Found");
-                    
                 }
 
             }
@@ -120,5 +115,9 @@ public class MainActivity extends AppCompatActivity {
         i.setData(Uri.parse(videoLink));
         startActivity(i);
 
+    }
+
+    public void gotoCountryPackages(View view) {
+        startActivity(new Intent(this, CountryPackagesActivity.class));
     }
 }

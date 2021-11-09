@@ -12,7 +12,6 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp">
 
-
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -231,7 +230,6 @@
                             android:layout_below="@+id/flightimage"
                             android:layout_centerHorizontal="true"
                             android:layout_marginTop="20dp"
-
                             android:text="@string/flight"
                             android:textColor="@color/black"
                             android:textSize="20sp"
@@ -506,7 +504,7 @@
                             android:textColor="@color/white"
                             android:textSize="15sp"
                             android:textStyle="bold"
-                            tools:ignore="OnClick" />
+                            tools:ignore="OnClick,UsingOnClickInXml" />
 
 
                     </RelativeLayout>
@@ -566,9 +564,11 @@
                                 app:cardCornerRadius="10dp">
 
                                 <ImageView
+                                    android:onClick="gotoCountryPackages"
                                     android:layout_width="match_parent"
                                     android:layout_height="match_parent"
-                                    android:src="@drawable/india" />
+                                    android:src="@drawable/india"
+                                    tools:ignore="OnClick" />
 
 
                             </androidx.cardview.widget.CardView>

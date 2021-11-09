@@ -15,6 +15,30 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
         <activity
+            android:name=".Packages.CountryPackagesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Services.ResortActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Services.RentaCarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Services.HotelsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Services.Private_VillaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Services.VisaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Services.FlightActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Booking.MyBookingActivity"
+            android:exported="false" />
+        <activity
             android:name=".Videos.VideoActivity"
             android:exported="false" />
         <activity

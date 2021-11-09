@@ -7,8 +7,12 @@ import android.os.Build;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Filter;
+import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.recyclerview.widget.RecyclerView;
@@ -17,14 +21,16 @@ import com.example.flyfarladies.Booking.BookingDetailsActivity;
 import com.example.flyfarladies.R;
 import java.util.ArrayList;
 
-public class PackagesAdapter extends RecyclerView.Adapter<PackagesAdapter.MyViewHolder> {
+public class PackagesAdapter extends RecyclerView.Adapter<PackagesAdapter.MyViewHolder> implements Filterable {
 
     Context context;
     ArrayList<PackagesModel> model;
+    ArrayList<PackagesModel> filterList;
 
     public PackagesAdapter(Context c, ArrayList<PackagesModel> m) {
         context = c;
         model = m;
+        this.filterList = model;
     }
 
     @NonNull
@@ -50,13 +56,11 @@ public class PackagesAdapter extends RecyclerView.Adapter<PackagesAdapter.MyView
                 .into(imageView);
 
 
-        holder.title.setOnClickListener(new View.OnClickListener() {
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(view.getContext(), BookingDetailsActivity.class);
                 view.getContext().startActivity(i);
-
-
             }
         });
     }
@@ -67,14 +71,54 @@ public class PackagesAdapter extends RecyclerView.Adapter<PackagesAdapter.MyView
         return model.size();
     }
 
+
+    public Filter getFilter() {
+        return new Filter() {
+            @Override
+            protected FilterResults performFiltering(CharSequence constraint) {
+                FilterResults results = new FilterResults();
+
+                ArrayList<PackagesModel> arrayListFilter = new ArrayList<>();
+
+                if(constraint == null|| constraint.length() == 0) {
+                    results.count = model.size();
+                    results.values = model;
+                } else {
+                    for (PackagesModel itemModel : model) {
+                        if(itemModel.getPkName().toLowerCase().contains(constraint.toString().toLowerCase())) {
+                            arrayListFilter.add(itemModel);
+                        }
+                    }
+                    results.count = arrayListFilter.size();
+                    results.values = arrayListFilter;
+
+                }
+                return results;
+            }
+
+            @SuppressLint("NotifyDataSetChanged")
+            @Override
+            protected void publishResults(CharSequence constraint, FilterResults results) {
+                filterList = (ArrayList<PackagesModel>) results.values;
+                notifyDataSetChanged();
+
+                if(filterList.size() == 0) {
+                    Toast.makeText(context, "Not Found", Toast.LENGTH_LONG).show();
+                }
+
+            }
+        };
+    }
+
+
     static class MyViewHolder extends RecyclerView.ViewHolder {
 
-        RecyclerView recyclerView;
         TextView title;
         TextView cost;
         TextView decription;
         TextView duration;
         ImageView imgurl;
+
         public MyViewHolder(View itemView) {
             super(itemView);
 

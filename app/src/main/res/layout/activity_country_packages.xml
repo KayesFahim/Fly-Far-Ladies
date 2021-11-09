@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Packages.CountryPackagesActivity">
+
+    <RelativeLayout
+        android:id="@+id/searchbar"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:layout_marginTop="-15dp"
+        android:background="@drawable/india">
+
+        <SearchView
+            android:id="@+id/countrysearch"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/searchbox"
+            android:iconifiedByDefault="false"
+            android:paddingStart="30dp"
+            android:paddingTop="10dp"
+            android:queryHint="Search By City name"
+            android:searchIcon="@null"
+            tools:ignore="RtlSymmetry" />
+
+
+
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/countryPackageView"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/searchbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
