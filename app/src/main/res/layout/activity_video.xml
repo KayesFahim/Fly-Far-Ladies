@@ -8,11 +8,11 @@
 
     <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
         android:id="@+id/youtube_player_view"
-        android:layout_centerInParent="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:videoId="JNctI8tDBmc"
-        app:useWebUi="true"
+        android:layout_centerInParent="true"
         app:autoPlay="true"
-        app:showFullScreenButton="false" />
+        app:showFullScreenButton="false"
+        app:useWebUi="true"
+        app:videoId="JNctI8tDBmc" />
 </RelativeLayout>

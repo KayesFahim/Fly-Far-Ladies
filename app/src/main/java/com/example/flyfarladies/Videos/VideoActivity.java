@@ -27,7 +27,8 @@ public class VideoActivity extends AppCompatActivity {
             @Override
             public void onReady(@NonNull YouTubePlayer youTubePlayer) {
                 youTubePlayer.loadVideo(VideoId, 0);
-
+                youTubePlayer.play();
+                
             }
         });
     }
