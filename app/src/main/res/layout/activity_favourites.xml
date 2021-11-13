@@ -7,17 +7,11 @@
     android:layout_margin="10dp"
     tools:context=".Dashboard.FavouritesActivity">
 
-    <TextView
-        android:id="@+id/back"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/icon_back"/>
 
     <TextView
         android:id="@+id/favouritedetails"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/back"
         android:layout_marginTop="10dp"
         android:layout_marginBottom="10dp"
         android:text="@string/favourites"
@@ -33,16 +27,18 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="110sp"
+            android:layout_height="120sp"
             android:layout_marginStart="30dp"
             android:layout_marginTop="30dp"
             android:layout_marginBottom="10dp"
+            android:layout_marginEnd="5dp"
             app:cardCornerRadius="15dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginStart="70dp">
+                android:layout_marginStart="70dp"
+                tools:ignore="RtlSymmetry">
 
 
                 <RelativeLayout

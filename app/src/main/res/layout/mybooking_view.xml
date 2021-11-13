@@ -1,8 +1,107 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/bottomborder"
+    tools:context=".Booking.BookingDetailsActivity">
 
+
+            <TextView
+                android:id="@+id/bookingicon"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_bed"
+                android:gravity="fill_vertical"
+                android:paddingStart="10dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="RtlSymmetry" />
+
+            <Button
+                android:id="@+id/bookingid"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/button"
+                android:gravity="fill_vertical"
+                android:paddingStart="10dp"
+                android:layout_marginStart="45dp"
+                android:text="@string/booking_id_3137556698"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="RtlSymmetry" />
+
+            <Button
+                android:id="@+id/viewdetails"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/button"
+                android:gravity="fill_vertical"
+                android:paddingEnd="10dp"
+                android:text="@string/view_details"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                tools:ignore="NotSibling,RelativeOverlap,RtlSymmetry" />
+
+    <RelativeLayout
+        android:id="@+id/hoteldetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewdetails"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="10dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/_21st_feb_28_feb"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/duration"
+            android:layout_marginTop="5dp"
+            android:text="@string/cox_s_bazar_chittagong"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/location"
+            android:text="@string/stayed"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/givereview"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_below="@id/location"
+            android:layout_alignParentEnd="true"
+            android:gravity="fill_vertical"
+            android:paddingEnd="10dp"
+            android:text="@string/give_review"
+            android:textColor="@color/primary"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:ignore="RtlSymmetry" />
+
+
+    </RelativeLayout>
 
 
 </RelativeLayout>
+
+
+

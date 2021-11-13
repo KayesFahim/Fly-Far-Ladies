@@ -94,4 +94,7 @@
     <string name="resorts">RESORT</string>
     <string name="visa">VISA</string>
     <string name="rent_a_car">RENT A CAR</string>
+    <string name="my_trips">My Trips</string>
+    <string name="stayed">* Stayed</string>
+    <string name="_21st_feb_28_feb">21st Feb - 28 Feb</string>
 </resources>

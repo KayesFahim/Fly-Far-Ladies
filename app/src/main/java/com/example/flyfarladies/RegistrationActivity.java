@@ -9,15 +9,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
-
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-
 import java.util.HashMap;
+import java.util.Objects;
 
 public class RegistrationActivity extends AppCompatActivity {
 
@@ -75,7 +74,7 @@ public class RegistrationActivity extends AppCompatActivity {
                                     Toast.makeText(RegistrationActivity.this, "Authentication failed." + task.getException(),
                                             Toast.LENGTH_LONG).show();
                                 } else {
-                                    String user_id = auth.getCurrentUser().getUid();
+                                    String user_id = Objects.requireNonNull(auth.getCurrentUser()).getUid();
                                     DatabaseReference DB = FirebaseDatabase.getInstance().getReference().child("User").child(user_id);
 
                                     // User Details
@@ -84,7 +83,6 @@ public class RegistrationActivity extends AppCompatActivity {
 
                                     newPost.put("userName", name);
                                     newPost.put("userEmail", email);
-
 
 
                                     DB.setValue(newPost);

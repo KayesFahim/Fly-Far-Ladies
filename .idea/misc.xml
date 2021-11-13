@@ -49,27 +49,30 @@
         <entry key="..\:/Users/Hp/Documents/Projects/GItHub-Projetcts/Fly Far Ladies/app/src/main/res/layout/activity_settings.xml" value="0.19202898550724637" />
         <entry key="..\:/Users/Hp/Documents/Projects/GItHub-Projetcts/Fly Far Ladies/app/src/main/res/layout/activity_splash.xml" value="0.18115942028985507" />
         <entry key="..\:/Users/Hp/Documents/Projects/GItHub-Projetcts/Fly Far Ladies/app/src/main/res/layout/activity_thank_you.xml" value="0.18" />
-        <entry key="..\:/Users/Hp/Documents/Projects/GItHub-Projetcts/Fly Far Ladies/app/src/main/res/layout/activity_video.xml" value="0.12894736842105264" />
         <entry key="..\:/Users/Hp/Documents/Projects/GItHub-Projetcts/Fly Far Ladies/app/src/main/res/layout/favourites_view.xml" value="0.25" />
         <entry key="..\:/Users/Hp/Documents/Projects/GItHub-Projetcts/Fly Far Ladies/app/src/main/res/layout/mybooking_view.xml" value="0.12894736842105264" />
+        <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/drawable/icon_bed.xml" value="0.13980263157894737" />
         <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout-v22/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/activity_auth.xml" value="0.33" />
         <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/activity_booking_details.xml" value="0.23157894736842105" />
         <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/activity_edit_profile.xml" value="0.36666666666666664" />
-        <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/activity_favourites.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/activity_favourites.xml" value="0.25" />
         <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/activity_forgot_password.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/activity_my_trips.xml" value="0.23157894736842105" />
         <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/activity_package_details.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/activity_packages_main.xml" value="0.33" />
         <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/activity_profile.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/activity_registration.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/activity_thank_you.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/activity_video.xml" value="0.23157894736842105" />
+        <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/mybooking_view.xml" value="0.23157894736842105" />
         <entry key="..\:/Users/creative117/Documents/Github Projects/Fly-Far-Ladies/app/src/main/res/layout/packages_view.xml" value="0.33" />
       </map>
     </option>
   </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
