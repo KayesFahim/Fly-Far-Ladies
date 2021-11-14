@@ -104,9 +104,8 @@ public class BookingPageActivity extends AppCompatActivity {
             public void onClick(View v) {
                 auth = FirebaseAuth.getInstance();
                 String user_id = Objects.requireNonNull(auth.getCurrentUser()).getUid();
-                DatabaseReference DB = null;
-                assert false;
-                DB = FirebaseDatabase.getInstance().getReference().child("Booking").child(DB.getKey());
+
+                DB = FirebaseDatabase.getInstance().getReference().child("Booking").push;
 
                 String dFrom = mspinner.getSelectedItem().toString();
 
