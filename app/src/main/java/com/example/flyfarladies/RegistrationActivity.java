@@ -83,8 +83,6 @@ public class RegistrationActivity extends AppCompatActivity {
 
                                     newPost.put("userName", name);
                                     newPost.put("userEmail", email);
-
-
                                     DB.setValue(newPost);
 
                                     Intent intent = new Intent(RegistrationActivity.this, MainActivity.class);

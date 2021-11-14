@@ -1,22 +1,24 @@
 package com.example.flyfarladies.Packages;
 
 public class PackagesModel {
-
+    String pkId;
     String pkCost;
     String pkDetails;
     String pkDuration;
     String pkImage;
     String pkName;
 
+
     public PackagesModel() {
     }
 
-    public PackagesModel(String pkCost, String pkDetails, String pkDuration, String pkImage, String pkName) {
+    public PackagesModel(String pkId, String pkCost, String pkDetails, String pkDuration, String pkImage, String pkName) {
         this.pkCost = pkCost;
         this.pkDetails = pkDetails;
         this.pkDuration = pkDuration;
         this.pkImage = pkImage;
         this.pkName = pkName;
+        this.pkId = pkId;
     }
 
     public String getPkCost() {
@@ -57,5 +59,13 @@ public class PackagesModel {
 
     public void setPkName(String pkName) {
         this.pkName = pkName;
+    }
+
+    public String getPkId() {
+        return pkId;
+    }
+
+    public void setPkId(String pkId) {
+        this.pkId = pkId;
     }
 }

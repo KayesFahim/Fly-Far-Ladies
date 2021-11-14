@@ -66,7 +66,7 @@ public class CountryPackagesActivity extends AppCompatActivity{
 
             @Override
             public boolean onQueryTextChange(String s) {
-               adapter.getFilter().filter(s);
+                adapter.getFilter().filter(s);
                 return true;
             }
         });

@@ -12,12 +12,12 @@ import android.widget.Filterable;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.flyfarladies.Booking.BookingDetailsActivity;
+import com.example.flyfarladies.Booking.BookingPageActivity;
 import com.example.flyfarladies.R;
 import java.util.ArrayList;
 
@@ -44,7 +44,7 @@ public class PackagesAdapter extends RecyclerView.Adapter<PackagesAdapter.MyView
     @Override
     public void onBindViewHolder(@NonNull final PackagesAdapter.MyViewHolder holder, @SuppressLint("RecyclerView") final int pos) {
         holder.title.setText(model.get(pos).getPkName());
-        holder.cost.setText(model.get(pos).getPkCost());
+        holder.cost.setText(model.get(pos).getPkCost() +"৳");
         holder.decription.setText(model.get(pos).getPkDetails());
         holder.duration.setText(model.get(pos).getPkDuration());
 
@@ -59,7 +59,13 @@ public class PackagesAdapter extends RecyclerView.Adapter<PackagesAdapter.MyView
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(view.getContext(), BookingDetailsActivity.class);
+                Intent i = new Intent(view.getContext(), BookingPageActivity.class);
+                i.putExtra("id", model.get(pos).getPkId());
+                i.putExtra("title", model.get(pos).getPkName());
+                i.putExtra("details", model.get(pos).getPkDetails());
+                i.putExtra("duration", model.get(pos).getPkDuration());
+                i.putExtra("price", model.get(pos).getPkCost());
+                i.putExtra("image", model.get(pos).getPkImage());
                 view.getContext().startActivity(i);
             }
         });

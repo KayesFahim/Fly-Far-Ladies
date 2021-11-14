@@ -97,4 +97,9 @@
     <string name="my_trips">My Trips</string>
     <string name="stayed">* Stayed</string>
     <string name="_21st_feb_28_feb">21st Feb - 28 Feb</string>
+    <string name="bangladesh">Bangladesh</string>
+    <string name="diparture_from">Diparture From</string>
+    <string name="terms_and_conditions">Terms And Conditions</string>
+    <string name="book_now">Book Now</string>
+    <string name="xyz">xyz</string>
 </resources>
