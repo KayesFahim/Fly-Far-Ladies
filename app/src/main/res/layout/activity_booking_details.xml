@@ -273,17 +273,20 @@
         android:background="@drawable/button_border"
         tools:ignore="WebViewLayout" />
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/call_hotel"
-        android:textStyle="bold"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/button"
-        android:layout_below="@+id/googlemap_webView"
-        android:textColor="@color/white"
-        android:textSize="20sp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_below="@+id/googlemap_webView"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:padding="5dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button"
+            android:textSize="15sp"
+            android:text="@string/call_hotel"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
 
     </RelativeLayout>
     </ScrollView>
@@ -294,26 +297,28 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
-
         android:background="@drawable/topborder"
         android:gravity="center"
-        android:paddingTop="10dp">
+        android:paddingTop="5dp">
 
         <Button
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            android:background="@drawable/icon_home" />
+            android:background="@drawable/icon_home"
+            android:onClick="gotoHome"
+            tools:ignore="OnClick" />
 
         <Button
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            android:background="@drawable/icon_paper" />
+            android:background="@drawable/icon_paper"
+            android:onClick="gotoMyBooking"
+            tools:ignore="OnClick" />
 
         <Button
             android:layout_width="40dp"
@@ -321,7 +326,8 @@
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:background="@drawable/icon_account"
-            tools:ignore="RtlSymmetry" />
+            android:onClick="gotoMyProfile"
+            tools:ignore="OnClick,RtlSymmetry" />
 
         <Button
             android:layout_width="40dp"

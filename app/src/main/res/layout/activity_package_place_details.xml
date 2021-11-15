@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Packages.PackagePlaceDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/placepic"
+            android:layout_width="match_parent"
+            android:layout_height="330dp"
+            android:background="@drawable/burjalarab" />
+
+        <Button
+            android:id="@+id/addfavourite"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="20dp"
+            android:background="@drawable/icon_favourite_white" />
+
+        <RelativeLayout
+            android:id="@+id/section2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/placepic"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/placename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/burj_al_arab"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/placename"
+                android:text="@string/sea_view_premium_lifestyle"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/nights"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button"
+                android:text="@string/_4_nights"
+                android:textColor="@color/white" />
+
+            <LinearLayout
+                android:id="@+id/ratingbaar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/description"
+                android:layout_marginTop="5dp"
+                tools:ignore="DuplicateIds">
+
+                <RatingBar
+                    android:id="@+id/ratingBar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:numStars="5"
+                    android:progressTint="@color/primary"
+                    android:stepSize="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="@string/score_4_5" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/cardview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ratingbaar">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"
+                    android:padding="20dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/flighticon"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/icon_flight" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/flighticon"
+                                android:layout_centerHorizontal="true"
+                                android:text="@string/flights" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/meal"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/icon_meal" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/meal"
+                                android:layout_centerHorizontal="true"
+                                android:text="@string/meals" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/Hotelsicon"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/icon_hotel" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/Hotelsicon"
+                                android:layout_centerHorizontal="true"
+                                android:text="@string/hotels" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/siteicon"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/ivon_siteview" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/siteicon"
+                                android:layout_centerHorizontal="true"
+                                android:text="@string/site_view" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:padding="10dp">
+
+                            <ImageView
+                                android:id="@+id/transfericon"
+                                android:layout_width="35dp"
+                                android:layout_height="35dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/icon_transfer" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@+id/transfericon"
+                                android:layout_centerHorizontal="true"
+                                android:text="@string/transfer" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/overview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardview"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/overviewtext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/overview"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/destailsoverview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/overviewtext"
+                    android:text="Details"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/videoTap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/overview">
+
+                <ImageView
+                    android:id="@+id/videoview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="300dp"
+                    android:src="@drawable/thumbnail" />
+
+
+                <Button
+                    android:id="@+id/videoplayBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/icon_playbutton"
+                    android:onClick="VideoPlayBtn"
+                    tools:ignore="OnClick,UsingOnClickInXml" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/inclusion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/videoTap"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/inclusiontext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Inclusions"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ListView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/inclusiontext" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/exclusion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inclusion"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/exclusiontext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Exclusions"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <ListView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/exclusiontext" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/aboutplace"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/exclusion"
+                android:layout_margin="10dp">
+
+                <TextView
+                    android:id="@+id/abouttext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/about_burj_al_arab"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:id="@+id/details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/abouttext">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/hotelimage"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="15dp"
+                        app:cardCornerRadius="15dp">
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/burjalrab" />
+                    </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        android:id="@+id/aboutdetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/details"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/gotoBooking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/section2"
+            android:background="@drawable/button"
+            android:layout_margin="15dp"
+            android:text="@string/countinue_booking"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</ScrollView>

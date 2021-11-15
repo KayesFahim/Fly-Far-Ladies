@@ -1,9 +1,15 @@
 package com.example.flyfarladies.Booking;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.flyfarladies.Dashboard.SettingsActivity;
+import com.example.flyfarladies.MainActivity;
+import com.example.flyfarladies.ProfileActivity;
 import com.example.flyfarladies.R;
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.webkit.WebView;
 
 public class BookingDetailsActivity extends AppCompatActivity {
@@ -17,5 +23,21 @@ public class BookingDetailsActivity extends AppCompatActivity {
         WebView googleMapWebView = (WebView) findViewById(R.id.googlemap_webView);
         googleMapWebView.getSettings().setJavaScriptEnabled(true);
         googleMapWebView.loadData(iframe, "text/html", "utf-8");
+    }
+
+    public void gotoHome(View view) {
+        startActivity(new Intent(this, MainActivity.class));
+    }
+
+    public void gotoMyBooking(View view) {
+        startActivity(new Intent(this, MyBookingActivity.class));
+    }
+
+    public void gotoMyProfile(View view) {
+        startActivity(new Intent(this, ProfileActivity.class));
+    }
+
+    public void Settings(View view) {
+        startActivity(new Intent(this, SettingsActivity.class));
     }
 }

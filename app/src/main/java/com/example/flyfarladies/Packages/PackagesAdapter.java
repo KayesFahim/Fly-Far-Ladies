@@ -59,8 +59,8 @@ public class PackagesAdapter extends RecyclerView.Adapter<PackagesAdapter.MyView
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(view.getContext(), BookingPageActivity.class);
-                i.putExtra("id", model.get(pos).getPkId());
+                Intent i = new Intent(view.getContext(), PackagePlaceDetails.class);
+                i.putExtra("pid", model.get(pos).getPkId());
                 i.putExtra("title", model.get(pos).getPkName());
                 i.putExtra("details", model.get(pos).getPkDetails());
                 i.putExtra("duration", model.get(pos).getPkDuration());

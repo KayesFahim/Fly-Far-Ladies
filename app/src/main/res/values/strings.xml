@@ -102,4 +102,15 @@
     <string name="terms_and_conditions">Terms And Conditions</string>
     <string name="book_now">Book Now</string>
     <string name="xyz">xyz</string>
+    <string name="my_booked_packages">My Booked Packages</string>
+    <string name="packs">Person :</string>
+    <string name="score_4_5">Score : 4.5</string>
+    <string name="flights">Flights</string>
+    <string name="transfer">Transfer</string>
+    <string name="site_view">Site View</string>
+    <string name="overview">Overview</string>
+    <string name="about_burj_al_arab">About Burj AL Arab</string>
+    <string name="details">Details</string>
+    <string name="countinue_booking">Countinue Booking</string>
+    <string name="meals">Meals</string>
 </resources>
