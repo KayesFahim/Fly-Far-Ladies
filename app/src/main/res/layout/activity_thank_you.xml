@@ -9,19 +9,9 @@
 
 
     <TextView
-        android:id="@+id/cross"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/cross"
-        android:textColor="@color/primary"
-        android:layout_marginStart="5dp"
-        android:textSize="30sp" />
-
-    <TextView
         android:id="@+id/thankyoutext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/cross"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:text="@string/thank_you"
@@ -45,7 +35,7 @@
     <ImageView
         android:id="@+id/thankyouimage"
         android:layout_width="wrap_content"
-        android:layout_height="200dp"
+        android:layout_height="220dp"
         android:layout_below="@+id/thankyoutag"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
@@ -88,13 +78,20 @@
         android:textStyle="bold" />
 
     <Button
+        android:onClick="gotoMyBooking"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/emailtext"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
         android:background="@drawable/button"
-        android:text="@string/view_details"
+        android:text="@string/my_booked_packages"
         android:textColor="@color/white"
-        android:textSize="15sp" />
+        android:textSize="15sp"
+        android:textStyle="bold"
+        tools:ignore="OnClick" />
 
 
     <LinearLayout

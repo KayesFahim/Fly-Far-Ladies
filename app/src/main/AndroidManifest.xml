@@ -15,6 +15,9 @@
         android:usesCleartextTraffic="true"
         tools:targetApi="m">
         <activity
+            android:name=".Packages.PackagePlaceDetails"
+            android:exported="false" />
+        <activity
             android:name=".Packages.CountryPackagesActivity"
             android:exported="false" />
         <activity
@@ -103,7 +106,7 @@
             android:exported="false" />
         <activity
             android:name=".SplashActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

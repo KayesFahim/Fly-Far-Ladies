@@ -1,27 +1,30 @@
 package com.example.flyfarladies.Booking;
 
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.bumptech.glide.Glide;
-import com.example.flyfarladies.MainActivity;
 import com.example.flyfarladies.R;
-import com.example.flyfarladies.RegistrationActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-
 import android.annotation.SuppressLint;
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
 import android.widget.TextView;
-
+import android.widget.Toast;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
-import java.util.Objects;
+import java.util.concurrent.ThreadLocalRandom;
 
 public class BookingPageActivity extends AppCompatActivity {
 
@@ -31,9 +34,11 @@ public class BookingPageActivity extends AppCompatActivity {
     TextView mdecription;
     TextView mduration;
     ImageView mimgurl;
-    String id;
     FirebaseAuth auth;
     Button bookbtn;
+    EditText packs;
+
+    ProgressDialog progressDialog;
 
     @SuppressLint("SetTextI18n")
     @Override
@@ -74,7 +79,7 @@ public class BookingPageActivity extends AppCompatActivity {
         String cost = getIntent().getStringExtra("price");
         String duration = getIntent().getStringExtra("duration");
         String image = getIntent().getStringExtra("image");
-        id = getIntent().getStringExtra("id");
+        String postId = getIntent().getStringExtra("pid");
 
 
 
@@ -94,37 +99,67 @@ public class BookingPageActivity extends AppCompatActivity {
 
 
         mspinner = findViewById(R.id.spinner);
+        packs = findViewById(R.id.pack);
+        packs.setText("1");
+
+        String Qt = packs.getText().toString();
+        int quantity =Integer.parseInt(Qt);
+
+
         ArrayAdapter<String> dlist = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, countries);
         dlist.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mspinner.setAdapter(dlist);
 
         bookbtn = findViewById(R.id.bookBtn);
-        bookbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                auth = FirebaseAuth.getInstance();
-                String user_id = Objects.requireNonNull(auth.getCurrentUser()).getUid();
 
-                DB = FirebaseDatabase.getInstance().getReference().child("Booking").push;
+        progressDialog = new ProgressDialog(BookingPageActivity.this);
 
-                String dFrom = mspinner.getSelectedItem().toString();
+            bookbtn.setOnClickListener(new View.OnClickListener() {
+                @RequiresApi(api = Build.VERSION_CODES.O)
+                @Override
+                public void onClick(View v) {
+                    if(quantity<1) {
+                        Toast.makeText(BookingPageActivity.this, "Minimun Packs at leats 1", Toast.LENGTH_LONG).show();
+                    }else {
+                        progressDialog.setMessage("Booking......");
+                        auth = FirebaseAuth.getInstance();
+                        String user_id = auth.getCurrentUser().getUid();
 
-                // User Details
-                HashMap<String, Object> newPost = new HashMap<>();
-                newPost.put("pid", id);
-                newPost.put("uid", user_id);
-                newPost.put("dipartureFrom", dFrom);
+                        Date date = new Date();
+                        @SuppressLint("SimpleDateFormat") SimpleDateFormat chiltime = new SimpleDateFormat("dd-MM-yyyy");
+                        String datebook = chiltime.format(date);
+                        DatabaseReference DB = FirebaseDatabase.getInstance().getReference().child("Booking").child(user_id);
 
-                DB.setValue(newPost);
+                        String dFrom = mspinner.getSelectedItem().toString();
 
-                Intent intent = new Intent(BookingPageActivity.this, BookingDetailsActivity.class);
-                startActivity(intent);
-                finish();
-            }
-        });
+                        @SuppressLint("SimpleDateFormat") SimpleDateFormat formatter = new SimpleDateFormat("ddMMyyyy");
+                        String strDate = formatter.format(date);
+
+                        int randomNum = ThreadLocalRandom.current().nextInt(1, 10000 + 1);
+
+                        // User Details
+                        HashMap<String, Object> newPost = new HashMap<>();
+                        newPost.put("bookingId", "" + strDate + randomNum + postId);
+                        newPost.put("pacakageId", postId);
+                        newPost.put("userId", user_id);
+                        newPost.put("dipartureFrom", dFrom);
+                        newPost.put("quantity", quantity);
+                        newPost.put("createAt", datebook);
 
 
+                        DB.push().setValue(newPost);
+                        progressDialog.show();
 
+                        Toast.makeText(BookingPageActivity.this, "Booking Done", Toast.LENGTH_LONG).show();
+                        progressDialog.dismiss();
+
+                        Intent intent = new Intent(BookingPageActivity.this, ThankYouActivity.class);
+                        startActivity(intent);
+                        finish();
+                    }
+                }
+            });
+
+
+        }
     }
-
-}
